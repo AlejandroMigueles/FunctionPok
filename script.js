@@ -58,7 +58,6 @@ const normalizePokemonData =  (name, imgResponseJson) => {
 };
 
 const renderCardPokemon = (element, index) => {
-    
     //esta porción de código crea los elementos de la tarjeta para despues poder insertarlos al html
     const cardPokemonDiv = document.createElement('div');
     const pokemonImg = document.createElement('img');
@@ -68,7 +67,7 @@ const renderCardPokemon = (element, index) => {
     //este código brinda las clases a los elementos creados anteriormente
     cardPokemonDiv.className = 'center';
     pokemonImg.className = 'icon-region';
-    
+
     //brinda un atributo al elemento seleccionado, en este ccaso el pokemonImg
     //la sintaxis nos dice Element.setAttribute(name(del atributo), value);
     //los atributos validos son: name, src,
